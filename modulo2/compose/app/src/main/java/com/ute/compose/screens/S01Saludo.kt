@@ -1,6 +1,5 @@
 package com.ute.compose.screens
 
-
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -15,7 +14,7 @@ fun Saludo(nombre: String) {
 }
 
 @Composable
-fun S01_SaludoScreen() {
+fun S01SaludoScreen() {
     Column(
         modifier            = Modifier.fillMaxSize().padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
@@ -51,5 +50,5 @@ private fun MensajeCondicional(mostrar: Boolean) {
 @Preview(showBackground = true)
 @Composable
 fun S01_Preview() {
-    MaterialTheme { S01_SaludoScreen() }
+    MaterialTheme { S01SaludoScreen() }
 }
