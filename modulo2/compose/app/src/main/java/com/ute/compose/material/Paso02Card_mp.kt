@@ -93,7 +93,7 @@ fun Paso02Card_mpScreen() {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text("Empleados Registrados - Nómina Ecuador",
+        Text("Empleados Registrados",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 

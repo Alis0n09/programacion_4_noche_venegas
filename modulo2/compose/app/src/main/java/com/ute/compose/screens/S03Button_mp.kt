@@ -19,7 +19,7 @@ fun S03Button_mpScreen() {
         verticalArrangement = Arrangement.spacedBy(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Acciones de Nómina - Botones",
+        Text("Acciones de Nomina - Botones",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
@@ -37,7 +37,7 @@ fun S03Button_mpScreen() {
         Spacer(Modifier.height(4.dp))
 
         Button(
-            onClick = { ultimoClick = "Calcular Nómina" },
+            onClick = { ultimoClick = "Calcular Nomina" },
             modifier = Modifier.fillMaxWidth()
         ) { Text("Calcular Nómina") }
 
@@ -78,11 +78,11 @@ fun S03Button_mpScreen() {
             onClick = { },
             enabled = false,
             modifier = Modifier.fillMaxWidth()
-        ) { Text("Nómina ya procesada (deshabilitado)") }
+        ) { Text("Nomina ya procesada (deshabilitado)") }
 
         HorizontalDivider()
 
-        EtiquetaSeccion("Acciones rápidas")
+        EtiquetaSeccion("Acciones rapidas")
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             IconButton(onClick = { ultimoClick = "Pago" }) {
                 Icon(Icons.Default.Payments, contentDescription = "Pagar")

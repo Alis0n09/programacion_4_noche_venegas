@@ -23,7 +23,7 @@ fun S05Modifier_mpScreen() {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        Text("Modifier en Nómina",
+        Text("Modifier en Nomina",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
@@ -35,7 +35,7 @@ fun S05Modifier_mpScreen() {
                 style = MaterialTheme.typography.bodySmall)
         }
 
-        EtiquetaSeccion("1. Avatar empleado (clip antes de background)")
+        EtiquetaSeccion("1. Avatar empleado ")
         Box(
             modifier = Modifier
                 .size(130.dp)
@@ -43,7 +43,7 @@ fun S05Modifier_mpScreen() {
                 .background(MaterialTheme.colorScheme.primaryContainer)
                 .border(2.dp, MaterialTheme.colorScheme.primary, RoundedCornerShape(16.dp))
                 .padding(12.dp)
-                .clickable { ultimoClick = "Perfil de empleado ✅" },
+                .clickable { ultimoClick = "Perfil de empleado" },
             contentAlignment = Alignment.Center
         ) {
             Text("Empleado\ndel Mes ✅",
@@ -51,7 +51,7 @@ fun S05Modifier_mpScreen() {
                 color = MaterialTheme.colorScheme.onPrimaryContainer)
         }
 
-        EtiquetaSeccion("2. Error común (background antes de clip)")
+        EtiquetaSeccion("2. Error común ")
         Box(
             modifier = Modifier
                 .size(130.dp)
@@ -60,11 +60,11 @@ fun S05Modifier_mpScreen() {
                 .padding(12.dp),
             contentAlignment = Alignment.Center
         ) {
-            Text("Sin recorte\ncorrecto ❌",
+            Text("Sin recorte\ncorrecto",
                 style = MaterialTheme.typography.labelSmall)
         }
 
-        EtiquetaSeccion("3. Iniciales departamento (CircleShape)")
+        EtiquetaSeccion("3. Iniciales departamento")
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             listOf("S" to Color(0xFF1976D2), "C" to Color(0xFF388E3C), "V" to Color(0xFFF57C00))
                 .forEach { (letra, color) ->

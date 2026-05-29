@@ -17,7 +17,7 @@ fun S06Estado_mpScreen() {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
-        Text("Estado de Nómina - Recomposición",
+        Text("Estado de Nomina",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 

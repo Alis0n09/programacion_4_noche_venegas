@@ -25,13 +25,13 @@ fun S01Saludo_mpScreen() {
         verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Sistema de Control de Nómina Ecuador",
+        Text("Sistema de Control de Nomina",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
-        SaludoNomina("Ana García - \$1200")
+        SaludoNomina("Jeniffer García - \$1200")
         SaludoNomina("Luis Vera - \$800")
-        SaludoNomina("Sistema Nómina v1.0")
+        SaludoNomina("Sistema Nomina v1.0")
 
         HorizontalDivider()
 
@@ -43,7 +43,7 @@ fun S01Saludo_mpScreen() {
 @Composable
 private fun MensajeActivo(activo: Boolean) {
     if (activo) {
-        Text("✅ Empleado activo en nómina")
+        Text("Empleado activo en nómina")
     } else {
         Text("(Empleado inactivo - no visible en nómina)",
             color = MaterialTheme.colorScheme.outline)

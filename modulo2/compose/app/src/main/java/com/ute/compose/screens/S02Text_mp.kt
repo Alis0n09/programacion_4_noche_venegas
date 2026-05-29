@@ -20,19 +20,19 @@ fun S02Text_mpScreen() {
         modifier = Modifier.fillMaxSize().padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text("Información de Nómina - Estilos de Texto",
+        Text("Información de Nomina - Estilos de Texto",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
-        EtiquetaSeccion("1. Datos básicos")
-        Text("Sueldo Básico Unificado 2024: \$460")
+        EtiquetaSeccion("1. Datos basicos")
+        Text("Sueldo Basico Unificado 2024: \$460")
 
         EtiquetaSeccion("2. fontSize + fontWeight + fontStyle")
-        Text("SISTEMA DE NÓMINA", fontSize = 24.sp, fontWeight = FontWeight.Bold)
+        Text("SISTEMA DE NOMINA", fontSize = 24.sp, fontWeight = FontWeight.Bold)
         Text("Reporte mensual", fontSize = 18.sp, fontStyle = FontStyle.Italic)
-        Text("Valores en dólares", fontSize = 20.sp, fontWeight = FontWeight.Light)
+        Text("Valores", fontSize = 20.sp, fontWeight = FontWeight.Light)
 
-        EtiquetaSeccion("3. Color y decoración")
+        EtiquetaSeccion("3. Color")
         Text("Totales en azul",
             color = Color(0xFF1976D2))
         Text("Total a pagar subrayado",
@@ -43,18 +43,18 @@ fun S02Text_mpScreen() {
 
         EtiquetaSeccion("4. maxLines + TextOverflow")
         Text(
-            text = "El empleado registra un total de 160 horas laboradas en el período mensual con un valor de hora ordinaria de \$4.50 según el contrato vigente",
+            text = "El empleado registra un total de 160 horas laboradas",
             maxLines = 1,
             overflow = TextOverflow.Ellipsis
         )
         Text(
-            text = "Los descuentos aplicados incluyen aporte IESS 9.45%, préstamos quirografarios, retención de impuesto a la renta y otros descuentos judiciales",
+            text = "Los descuentos aplicados incluyen aporte IESS 9.45%",
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
         )
 
-        EtiquetaSeccion("5. Escala tipográfica Material 3")
-        Text("Nómina", style = MaterialTheme.typography.headlineMedium)
+        EtiquetaSeccion("5. Escala tipográfica")
+        Text("Nomina", style = MaterialTheme.typography.headlineMedium)
         Text("Reporte Mensual", style = MaterialTheme.typography.titleLarge)
         Text("Total empleados: 8", style = MaterialTheme.typography.bodyLarge)
         Text("Período: Enero 2024", style = MaterialTheme.typography.bodySmall)
@@ -62,7 +62,7 @@ fun S02Text_mpScreen() {
 
         EtiquetaSeccion("6. TextAlign")
         Text(
-            text = "SISTEMA DE NÓMINA ECUADOR",
+            text = "SISTEMA DE NOMINA",
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth()
         )

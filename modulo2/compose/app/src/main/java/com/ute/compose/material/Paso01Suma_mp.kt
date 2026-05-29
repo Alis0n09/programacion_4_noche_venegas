@@ -23,7 +23,7 @@ fun Paso01Suma_mpScreen() {
             .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
-        Text("Cálculo de Sueldo Neto - Nómina Ecuador",
+        Text("Calculo de Sueldo Neto - Nomina",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
         CalcularSueldoNeto()
@@ -37,7 +37,7 @@ private fun CalcularSueldoNeto() {
     var resultado by remember { mutableStateOf("460.00") }
 
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        Text("Cálculo de Nómina",
+        Text("Calculo de Nomina",
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.primary)
 

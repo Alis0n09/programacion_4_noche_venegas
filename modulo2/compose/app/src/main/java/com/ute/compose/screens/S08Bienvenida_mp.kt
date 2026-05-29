@@ -34,7 +34,7 @@ fun S08Bienvenida_mpScreen() {
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         Text(
-            text = "Bienvenido al Sistema de Nómina",
+            text = "Bienvenido al Sistema de Nomina",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary

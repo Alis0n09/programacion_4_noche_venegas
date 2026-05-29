@@ -18,7 +18,7 @@ fun S07StateHoisting_mpScreen() {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
-        Text("State Hoisting - Nómina",
+        Text("State Hoisting - Nomina",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
@@ -31,7 +31,7 @@ fun S07StateHoisting_mpScreen() {
 @Composable
 private fun DemoEstadoAtrapado() {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        EtiquetaSeccion("❌ Estado atrapado — sin acceso del padre")
+        EtiquetaSeccion("Estado atrapado — sin acceso del padre")
 
         Text(
             "El contador de empleados vive dentro del botón. " +
@@ -43,7 +43,7 @@ private fun DemoEstadoAtrapado() {
         BotonContadorAtrapado()
 
         Text(
-            "El padre no puede mostrar el total aquí ❌",
+            "El padre no puede mostrar el total aquí",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.error
         )
@@ -66,7 +66,7 @@ private fun DemoEstadoElevado() {
     val tiposContrato = listOf("FIJO", "INDEFINIDO", "TEMPORAL", "PRÁCTICAS")
 
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        EtiquetaSeccion("✅ Estado elevado — el padre coordina")
+        EtiquetaSeccion("Estado elevado — el padre coordina")
 
         Text(
             "El hijo solo notifica el tipo seleccionado. " +

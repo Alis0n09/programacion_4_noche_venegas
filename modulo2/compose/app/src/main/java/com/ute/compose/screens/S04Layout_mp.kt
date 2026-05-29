@@ -21,7 +21,7 @@ fun S04Layout_mpScreen() {
             .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
-        Text("Layout de Nómina · Column · Row · Box",
+        Text("Layout de Nomina · Column · Row · Box",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 
@@ -34,7 +34,7 @@ fun S04Layout_mpScreen() {
             verticalArrangement = Arrangement.spacedBy(4.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            CeldaLayout("Nombre: Ana García", Color(0xFF90CAF9))
+            CeldaLayout("Nombre: Alison Venegas", Color(0xFF90CAF9))
             CeldaLayout("Sueldo: \$1,200.00", Color(0xFF64B5F6))
             CeldaLayout("Depto: Sistemas", Color(0xFF42A5F5))
         }
@@ -86,7 +86,7 @@ fun S04Layout_mpScreen() {
                 .align(Alignment.TopStart))
             Box(Modifier.size(40.dp).background(Color(0xFF1976D2))
                 .align(Alignment.BottomEnd))
-            Text("NÓMINA ECUADOR",
+            Text("CONTROL NOMINA",
                 color = Color.White,
                 style = MaterialTheme.typography.labelLarge)
         }

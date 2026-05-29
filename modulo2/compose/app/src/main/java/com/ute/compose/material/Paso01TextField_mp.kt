@@ -24,7 +24,7 @@ fun Paso01_TextField_mpScreen() {
             .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
-        Text("Registro de Empleado - Nómina Ecuador",
+        Text("Registro de Empleado",
             style = MaterialTheme.typography.titleMedium)
         HorizontalDivider()
 

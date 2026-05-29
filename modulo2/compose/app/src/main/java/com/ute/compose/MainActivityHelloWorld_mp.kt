@@ -13,15 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ute.compose.ui.theme.ComposeTheme
 
-class MainActivityHelloWorldmp : ComponentActivity() {
+class MainActivityHelloWorld_mp  : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         setContent {
             ComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     SaludoNomina(
-                        name = "Sistema Nómina Ecuador",
+                        name = "Sistema Nomina",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -42,6 +43,6 @@ fun SaludoNomina(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun SaludoNominaPreview() {
     ComposeTheme {
-        SaludoNomina("Nómina Ecuador")
+        SaludoNomina("Control de Nomina")
     }
 }
