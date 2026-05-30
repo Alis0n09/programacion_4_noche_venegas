@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Tipo de Contrato ===")
+    println("--- Tipo de Contrato ---")
     println("Nombre del empleado:")
     val nombre = readLine()?.trim() ?: ""
     println("Tipo de contrato (FIJO/INDEFINIDO/TEMPORAL/PRACTICAS):")
@@ -8,15 +8,15 @@ fun main() {
     when (tipo) {
         "FIJO" -> {
             println("CONTRATO FIJO - $nombre")
-            println("Duración: 1 año renovable")
+            println("Duracion: 1 año renovable")
             println("Beneficios: décimos, vacaciones, fondos de reserva")
         }
         "INDEFINIDO" -> {
             println("CONTRATO INDEFINIDO - $nombre")
             println("Estabilidad laboral completa")
-            println("Beneficios: todos según Código de Trabajo")
+            println("Beneficios: todos según Codigo de Trabajo")
         }
-        "TEMPORAL" -> println("Temporal: $nombre, duración máxima 6 meses")
+        "TEMPORAL" -> println("Temporal: $nombre, duracion máxima 6 meses")
         "PRACTICAS" -> println("Prácticas: $nombre, convenio educativo")
         else -> println("Tipo de contrato no reconocido")
     }

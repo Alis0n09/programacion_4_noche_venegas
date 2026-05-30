@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Lista de Empleados ===")
+    println("--- Lista de Empleados ---")
     println("Inmutable")
     val empleados = listOf("Ana López", "Luis Vera", "Carmen Ruiz", "Pedro Salas", "Sofía Paz")
     println(empleados)

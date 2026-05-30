@@ -10,7 +10,7 @@ fun main() {
 }
 
 fun mostrarBienvenida() {
-    println("=== SISTEMA DE NÓMINA ECUADOR ===")
+    println("--- SISTEMA DE NOMINA ECUADOR ---")
 }
 
 fun mostrarEmpleado(nombre: String) {

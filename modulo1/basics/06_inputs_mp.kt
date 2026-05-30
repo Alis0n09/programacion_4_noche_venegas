@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Registro de Empleado ===")
+    println("--- Registro de Empleado ---")
     println("Ingrese nombre del empleado:")
 
     val nombre = readLine() ?: "sin nombre"

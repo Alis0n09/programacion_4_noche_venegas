@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Control de Impuesto a la Renta ===")
+    println("--- Control de Impuesto a la Renta---")
     println("Ingrese sueldo mensual del empleado:")
 
     val sueldo = readLine()?.toDoubleOrNull() ?: 460.0

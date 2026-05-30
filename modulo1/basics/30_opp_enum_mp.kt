@@ -1,7 +1,7 @@
 enum class TipoContrato(val descripcion: String, val esTerminal: Boolean) {
-    ACTIVO("Empleado activo en nómina", false),
+    ACTIVO("Empleado activo en nomina", false),
     SUSPENDIDO("Suspensión temporal", false),
-    LIQUIDADO("Contrato finalizado con liquidación", true),
+    LIQUIDADO("Contrato finalizado con liquidacion", true),
     RENUNCIA("Renuncia voluntaria", true),
     DESPIDO("Despido por parte de la empresa", true);
 

@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Validación de Bonos Nómina ===")
+    println("--- Validacion de Bonos Nomina ---")
     val cumpleHoras = true
     val sinFaltas = false
     val evaluacionPositiva = true

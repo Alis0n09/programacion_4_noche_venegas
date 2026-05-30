@@ -1,5 +1,5 @@
 fun main() {
-    println("=== CICLO while - Validación de Nómina ===")
+    println("--- CICLO while - Validacion de Nomina ---")
     var empleado = 1
     while (empleado <= 5) {
         print("Validando empleado #$empleado ")

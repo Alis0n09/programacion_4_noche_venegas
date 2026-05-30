@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Filtros de Nómina ===")
+    println("--- Filtros de Nómina ---")
     val sueldos = listOf(460.0, 600.0, 850.0, 1200.0, 1500.0, 2000.0, 3000.0)
     println(sueldos)
     val conImpuesto = sueldos.map { it * 0.95 }

@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Departamento del Empleado ===")
+    println("--- Departamento del Empleado ---")
     println("Código de departamento? (1-6)")
     println("1 -> Contabilidad")
     println("2 -> Recursos Humanos")

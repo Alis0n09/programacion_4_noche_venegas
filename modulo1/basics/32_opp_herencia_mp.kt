@@ -19,10 +19,10 @@ class MedioTiempo(nombre: String, sueldoBase: Double, val horasSemanales: Int) :
 }
 
 fun main() {
-    val emp1 = TiempoCompleto("Ana López", 1200.0, 200.0)
+    val emp1 = TiempoCompleto("Ana Suarez", 1200.0, 200.0)
     emp1.calcularPago()
 
-    val emp2 = MedioTiempo("Luis Vera", 500.0, 20)
+    val emp2 = MedioTiempo("Luis Montero", 500.0, 20)
     println(emp2.descripcion())
 
     emp1.registrar()

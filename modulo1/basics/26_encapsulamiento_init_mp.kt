@@ -3,9 +3,9 @@ class Empleado(val nombre: String, val email: String, val sueldo: Double) {
     val dominioEmail: String
 
     init {
-        require(nombre.isNotBlank()) { "El nombre no puede estar vacío" }
-        require(email.contains("@")) { "Email inválido: $email" }
-        require(sueldo >= 460.0) { "Sueldo debe ser >= básico unificado" }
+        require(nombre.isNotBlank()) { "El nombre no puede estar vacio" }
+        require(email.contains("@")) { "Email invalido: $email" }
+        require(sueldo >= 460.0) { "Sueldo debe ser >= basico unificado" }
 
         nombreNormalizado = nombre.trim().lowercase()
         dominioEmail = email.substringAfter("@")

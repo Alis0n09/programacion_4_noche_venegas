@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Set de Cédulas de Empleados ===")
+    println("--- Set de Cédulas de Empleados ---")
     println("Inmutable - sin duplicados")
     val cedulas = setOf("1234567890", "0987654321", "1234567890", "1122334455", "0987654321", "5566778899")
     println(cedulas)

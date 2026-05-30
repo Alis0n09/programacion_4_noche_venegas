@@ -4,7 +4,7 @@ interface Exportable {
     val version: Int get() = 1
 }
 
-interface Validable {
+interface Validable2 {
     val errores: List<String>
     val esValido: Boolean get() = errores.isEmpty()
 
@@ -20,7 +20,7 @@ data class RegistroEmpleado(
     val nombre: String,
     val sueldo: Double,
     val departamento: String
-) : Exportable, Validable {
+) : Exportable, Validable2 {
 
     override fun exportar() =
         "$id|$nombre|$sueldo|$departamento"
@@ -35,16 +35,16 @@ data class RegistroEmpleado(
 }
 
 fun main() {
-    val r1 = RegistroEmpleado("E001", "Ana López", 1200.0, "Sistemas")
+    val r1 = RegistroEmpleado("E001", "Ana Lopez", 1200.0, "Sistemas")
     val r2 = RegistroEmpleado("E002", "", -5.0, "")
 
     fun procesarExportable(s: Exportable) = println("→ ${s.exportar()}")
-    fun procesarValidable(v: Validable) {
-        println("Válido: ${v.esValido}")
+    fun procesarValidable2(v: Validable2) {
+        println("Valido: ${v.esValido}")
         v.imprimirErrores()
     }
 
     procesarExportable(r1)
-    procesarValidable(r1)
-    procesarValidable(r2)
+    procesarValidable2(r1)
+    procesarValidable2(r2)
 }

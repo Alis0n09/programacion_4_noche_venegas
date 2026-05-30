@@ -1,9 +1,9 @@
 fun main() {
-    println("=== Clasificación Salarial ===")
+    println("--- Clasificacion Salarial ---")
     println("Ingrese sueldo mensual del empleado:")
     val sueldo = readLine()?.toDoubleOrNull() ?: 0.0
     val clasificacion = if (sueldo < 460.0) {
-        "Bajo el básico unificado"
+        "Bajo el basico unificado"
     } else if (sueldo <= 600.0) {
         "Nivel inicial"
     } else if (sueldo <= 1000.0) {
@@ -13,5 +13,5 @@ fun main() {
     } else {
         "Nivel ejecutivo"
     }
-    println("Clasificación: $clasificacion")
+    println("Clasificacion: $clasificacion")
 }

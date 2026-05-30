@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Funciones Lambda en Nómina ===")
+    println("--- Funciones Lambda en Nómina ---")
     val sumaSueldos: (Double, Double) -> Double = { a: Double, b: Double -> a + b }
     println(sumaSueldos(460.0, 100.0))
     val descuentoIESS: (Double) -> Double = { it * 0.0945 }

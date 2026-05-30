@@ -7,9 +7,9 @@ data class Empleado(
 )
 
 fun main() {
-    val e1 = Empleado(1, "Ana López", 1200.0, "Sistemas")
-    val e2 = Empleado(1, "Ana López", 1200.0, "Sistemas")
-    val e3 = Empleado(2, "Luis Vera", 800.0, "Contabilidad")
+    val e1 = Empleado(1, "Ana Proaño", 1200.0, "Sistemas")
+    val e2 = Empleado(1, "Ana Proaño", 1200.0, "Sistemas")
+    val e3 = Empleado(2, "Luis Lema", 800.0, "Contabilidad")
 
     println(e1)
     println(e1 == e2)

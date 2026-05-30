@@ -1,16 +1,16 @@
 fun main() {
-    println("=== Map de Sueldos por Empleado ===")
+    println("--- Map de Sueldos por Empleado ---")
     println("Inmutable")
     val sueldos = mapOf(
-        "Ana López" to 1200.0,
-        "Luis Vera" to 800.0,
-        "Carmen Ruiz" to 1500.0,
-        "Pedro Salas" to 950.0
+        "Gabriela Lopez" to 1200.0,
+        "Luis Perez" to 800.0,
+        "Canelo Ruiz" to 1500.0,
+        "Pedro Ortiz" to 950.0
     )
-    println(sueldos["Ana López"])
-    println(sueldos["Carlos"])
-    println(sueldos.getOrDefault("Ana López", 0.0))
-    println(sueldos.getOrDefault("Carlos", 0.0))
+    println(sueldos["Gabriela Lopez"])
+    println(sueldos["Luis Perez"])
+    println(sueldos.getOrDefault("Gabriela Lopez", 0.0))
+    println(sueldos.getOrDefault("Luis Perez", 0.0))
     println(sueldos.keys)
     println(sueldos.values)
     for ((empleado, sueldo) in sueldos) {
@@ -22,18 +22,18 @@ fun main() {
 
     println("Mutable")
     val bonos = mutableMapOf(
-        "Ana López" to 100,
-        "Luis Vera" to 50,
-        "Carmen Ruiz" to 200
+        "Gabriela Lopez" to 100,
+        "Luis Perez" to 50,
+        "Canelo Ruiz" to 200
     )
-    bonos["Pedro Salas"] = 75
+    bonos["Pedro Ortiz"] = 75
     println(bonos)
-    bonos["Ana López"] = 150
+    bonos["Ana Lopez"] = 150
     println(bonos)
-    bonos.remove("Luis Vera")
+    bonos.remove("Luis Perez")
     println(bonos)
-    bonos.getOrPut("Sofía Paz") { 80 }
+    bonos.getOrPut("Sofia Paz") { 80 }
     println(bonos)
-    bonos.getOrPut("Ana López") { 80 }
+    bonos.getOrPut("Ana Lopez") { 80 }
     println(bonos)
 }

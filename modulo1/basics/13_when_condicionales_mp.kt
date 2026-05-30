@@ -1,12 +1,12 @@
 fun main() {
-    println("=== Cálculo de Descuentos ===")
+    println("--- Calculo de Descuentos ---")
     println("Sueldo del empleado:")
     val sueldo = readLine()?.toDoubleOrNull() ?: 0.0
-    println("Tiene crédito hipotecario? s/n")
+    println("Tiene credito hipotecario? s/n")
     val tieneHipoteca = readLine()?.trim()?.lowercase() == "s"
 
     val nivelCredito = if (tieneHipoteca) {
-        println("Nivel de crédito (BAJO/MEDIO/ALTO):")
+        println("Nivel de credito (BAJO/MEDIO/ALTO):")
         readLine()?.trim()?.uppercase() ?: ""
     } else ""
 

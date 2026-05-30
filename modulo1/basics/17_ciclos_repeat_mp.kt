@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Cálculo de Promedio Salarial ===")
+    println("--- Cálculo de Promedio Salarial ---")
     println("Cuantos empleados va a registrar?")
     val cantidad = readLine()?.toIntOrNull() ?: 3
     var totalSueldos = 0

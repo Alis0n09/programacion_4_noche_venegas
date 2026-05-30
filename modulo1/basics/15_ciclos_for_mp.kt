@@ -1,5 +1,5 @@
 fun main() {
-    println("=== CICLO for - Liquidación de Nómina ===")
+    println("--- CICLO for - Liquidacion de Nomina ---")
     for (i in 1..5) {
         println("Procesando empleado #$i")
     }
@@ -12,7 +12,7 @@ fun main() {
         println("Días restantes para cierre: $i")
     }
     println("Lista de empleados")
-    val empleados = listOf("Ana", "Luis", "Juana", "Pedro", "Sofía")
+    val empleados = listOf("Ana", "Luis", "Juana", "Pedro", "Sofia")
     for (empleado in empleados) {
         println("Empleado: $empleado")
     }

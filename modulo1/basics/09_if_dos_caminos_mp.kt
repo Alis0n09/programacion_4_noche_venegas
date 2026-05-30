@@ -1,5 +1,5 @@
 fun main() {
-    println("=== Afiliación IESS ===")
+    println("--- Afiliación IESS ---")
     println("Está afiliado al IESS? s/n")
 
     val afiliado = readLine()?.trim()?.lowercase() == "s"
@@ -10,6 +10,6 @@ fun main() {
         println("Aporte IESS 9.45%: \$$descuento")
         println("Sueldo neto: \$${sueldo - descuento}")
     } else {
-        println("Sin afiliación - Sueldo íntegro: \$$sueldo")
+        println("Sin afiliacion - Sueldo integro: \$$sueldo")
     }
 }

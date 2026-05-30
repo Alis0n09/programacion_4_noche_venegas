@@ -2,7 +2,7 @@ class Sueldo(valor: Double) {
 
     var valor: Double = valor
         set(value) {
-            require(value >= 460.0) { "Sueldo no puede ser menor al básico unificado" }
+            require(value >= 460.0) { "Sueldo no puede ser menor al basico unificado" }
             field = value
         }
 
@@ -14,7 +14,7 @@ class Sueldo(valor: Double) {
 
     val descripcion: String
         get() = when {
-            valor < 500 -> "Salario mínimo"
+            valor < 500 -> "Salario minimo"
             valor < 800 -> "Salario medio-bajo"
             valor < 1200 -> "Salario medio"
             valor < 2000 -> "Salario alto"
@@ -25,8 +25,8 @@ class Sueldo(valor: Double) {
 fun main() {
     val s = Sueldo(800.0)
     println("Sueldo: \$${s.valor}")
-    println("Décimo tercero: \$${"%.2f".format(s.decimoTercero)}")
-    println("Décimo cuarto: \$${"%.2f".format(s.decimoCuarto)}")
+    println("Decimo tercero: \$${"%.2f".format(s.decimoTercero)}")
+    println("Decimo cuarto: \$${"%.2f".format(s.decimoCuarto)}")
     println(s.descripcion)
 
     s.valor = 500.0

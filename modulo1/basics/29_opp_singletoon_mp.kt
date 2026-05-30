@@ -1,5 +1,5 @@
 object ConfiguracionEmpresa {
-    val nombre: String = "Corporación Ecuador S.A."
+    val nombre: String = "Corporacion Ecuador S.A."
     val ruc: String = "1791234567001"
     private val claveContabilidad: String = "clave-secreta-123"
 
