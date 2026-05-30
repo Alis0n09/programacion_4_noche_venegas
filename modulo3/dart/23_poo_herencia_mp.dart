@@ -28,8 +28,8 @@ class MedioTiempo extends EmpleadoBase {
 }
 
 void main() {
-  final tc = TiempoCompleto('Ana García', 1200.0);
-  final mt = MedioTiempo('Luis Vera', 500.0);
+  final tc = TiempoCompleto('Gabriela Calderon', 1200.0);
+  final mt = MedioTiempo('Ines Vera', 500.0);
 
   tc.presentarse();
   mt.presentarse();

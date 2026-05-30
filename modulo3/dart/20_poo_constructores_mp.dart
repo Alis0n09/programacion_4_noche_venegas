@@ -33,10 +33,10 @@ class Contrato {
 }
 
 void main() {
-  final c1 = Contrato(empleado: 'Ana García', sueldo: 1200.0, horas: 40);
-  final c2 = Contrato.medioTiempo(empleado: 'Luis Vera', sueldo: 500.0);
-  final c3 = Contrato.completo(empleado: 'María Ruiz', sueldo: 1500.0);
-  final c4 = Contrato.desdeSalario('Pedro Salas', 800.0);
+  final c1 = Contrato(empleado: 'Gabriela Calderon', sueldo: 1200.0, horas: 40);
+  final c2 = Contrato.medioTiempo(empleado: 'Ines Vera', sueldo: 500.0);
+  final c3 = Contrato.completo(empleado: 'María Rosero', sueldo: 1500.0);
+  final c4 = Contrato.desdeSalario('Jose Salas', 800.0);
 
   print(c1);
   print(c2);

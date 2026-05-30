@@ -1,5 +1,5 @@
 void main() {
-  var nombre = 'Ana';           // String
+  var nombre = 'Gabriela';           // String
   var sueldo = 1200.00;         // double
   var activo = true;            // bool
 
@@ -25,7 +25,7 @@ void main() {
 
   const impuestos = [0.0945, 0.02, 0.05];
 
-  String nombre2 = 'Luis';
+  String nombre2 = 'Jorge';
   String? apellido2 = null;
   apellido2 = 'Vera';
 

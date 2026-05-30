@@ -1,5 +1,5 @@
 void main() {
-  final nombre = 'Ana';
+  final nombre = 'Gabriela';
   final sueldo = 1200.0;
 
   print('Empleado: $nombre');

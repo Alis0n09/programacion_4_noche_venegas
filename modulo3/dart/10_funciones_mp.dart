@@ -1,5 +1,5 @@
 void mostrarBienvenida() {
-  print('Sistema de Nómina Ecuador');
+  print('Sistema de Nomina ');
 }
 
 void mostrarEmpleado(String nombre) {
@@ -18,7 +18,7 @@ double calcularIESS(double sueldo) => sueldo * 0.0945;
 
 void main() {
   mostrarBienvenida();
-  mostrarEmpleado('Ana García');
+  mostrarEmpleado('Gabriela Calderon');
   double sueldo = obtenerSueldo();
   print(sueldo);
   print('La suma es: \$${sumarSueldos(800, 200)}');
