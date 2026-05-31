@@ -1,6 +1,5 @@
 package com.ute.compose.material
 
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -117,7 +116,7 @@ fun Paso02CardScreen() {
             color = MaterialTheme.colorScheme.primary)
 
         // Mostramos los primeros 3 contactos de la lista de muestra
-        contactosDeMuestra.take(3).forEach { contacto ->
+        contactosDeMuestra.forEach { contacto ->
             TarjetaContacto(
                 contacto  = contacto,
                 onClick   = { /* En el Paso 6: navegar al detalle */ },
@@ -153,6 +152,6 @@ fun Paso02CardScreen() {
 
 @Preview(showBackground = true)
 @Composable
-fun Paso02Preview() {
+fun Paso02_Preview() {
     MaterialTheme { Paso02CardScreen() }
 }

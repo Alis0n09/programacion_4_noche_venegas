@@ -1,0 +1,31 @@
+package com.ute.compose.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val NominaPrimary = Color(0xFF1B5E20)
+val NominaOnPrimary = Color(0xFFFFFFFF)
+val NominaPrimaryContainer = Color(0xFFA5D6A7)
+val NominaOnPrimaryContainer = Color(0xFF0D3B11)
+val NominaSecondary = Color(0xFF37474F)
+val NominaOnSecondary = Color(0xFFFFFFFF)
+val NominaSecondaryContainer = Color(0xFFCFD8DC)
+val NominaOnSecondaryContainer = Color(0xFF1C313A)
+val NominaTertiary = Color(0xFF01579B)
+val NominaOnTertiary = Color(0xFFFFFFFF)
+val NominaBackground = Color(0xFFF5F5F5)
+val NominaOnBackground = Color(0xFF1C1B1F)
+val NominaSurface = Color(0xFFFFFBFE)
+val NominaOnSurface = Color(0xFF1C1B1F)
+val NominaError = Color(0xFFB71C1C)
+val NominaOnError = Color(0xFFFFFFFF)
+
+val NominaDarkPrimary = Color(0xFF81C784)
+val NominaDarkOnPrimary = Color(0xFF003300)
+val NominaDarkPrimaryContainer = Color(0xFF1B5E20)
+val NominaDarkOnPrimaryContainer = Color(0xFFA5D6A7)
+val NominaDarkSecondary = Color(0xFF90A4AE)
+val NominaDarkOnSecondary = Color(0xFF1C313A)
+val NominaDarkBackground = Color(0xFF121212)
+val NominaDarkOnBackground = Color(0xFFE6E1E5)
+val NominaDarkSurface = Color(0xFF1C1B1F)
+val NominaDarkOnSurface = Color(0xFFE6E1E5)
