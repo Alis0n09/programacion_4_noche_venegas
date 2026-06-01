@@ -1,8 +1,5 @@
 package com.shopapp.presentation.ui.admin.orders
 
-// presentation/ui/admin/orders/OrdersAdminScreen.kt
-
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn

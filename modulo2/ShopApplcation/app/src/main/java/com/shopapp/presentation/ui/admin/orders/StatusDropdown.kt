@@ -1,7 +1,5 @@
 package com.shopapp.presentation.ui.admin.orders
 
-// presentation/ui/admin/orders/StatusDropdown.kt
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*

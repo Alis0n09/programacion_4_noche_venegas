@@ -1,7 +1,5 @@
 package com.shopapp.presentation.viewmodel
 
-// presentation/viewmodel/OrdersAdminViewModel.kt
-
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shopapp.domain.model.Order
