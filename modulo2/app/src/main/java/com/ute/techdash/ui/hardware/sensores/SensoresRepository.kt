@@ -1,6 +1,5 @@
 package com.ute.techdash.ui.hardware.sensores
 
-
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
