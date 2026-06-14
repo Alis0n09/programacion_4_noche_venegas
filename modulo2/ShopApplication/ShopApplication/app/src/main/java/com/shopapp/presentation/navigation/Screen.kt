@@ -30,4 +30,6 @@ sealed class Screen(val route: String) {
 
     data object ForgotPassword       : Screen("forgot-password")
     data object ResetPasswordConfirm : Screen("reset-password-confirm")
+
+    data object SendNotification : Screen("send-notification")
 }
