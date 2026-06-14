@@ -22,8 +22,9 @@ import com.shopapp.theme.*
 
 @Composable
 fun LoginScreen(
-    onLoginSuccess:  (isStaff: Boolean) -> Unit,
+    onLoginSuccess:       (isStaff: Boolean) -> Unit,
     onNavigateToRegister: () -> Unit,
+    onForgotPassword:     () -> Unit = {},
     viewModel: AuthViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -127,6 +128,13 @@ fun LoginScreen(
                         isLoading = isLoading,
                         enabled   = username.isNotBlank() && password.isNotBlank(),
                     )
+
+                    TextButton(
+                        onClick  = onForgotPassword,
+                        modifier = Modifier.align(Alignment.CenterHorizontally),
+                    ) {
+                        Text("¿Olvidaste tu contraseña?")
+                    }
                 }
             }
 
