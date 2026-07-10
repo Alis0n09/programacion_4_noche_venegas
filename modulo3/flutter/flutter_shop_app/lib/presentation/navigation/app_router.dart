@@ -1,4 +1,4 @@
-// lib/presentation/navigation/app_router.dart — versión final completa
+// lib/presentation/navigation/app_router.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,12 +6,14 @@ import 'package:flutter_shop_app/presentation/screens/admin/categoriesadminscree
 import 'package:flutter_shop_app/presentation/screens/admin/orderadmindetail_screen.dart';
 import 'package:flutter_shop_app/presentation/screens/admin/ordersadminscreen.dart';
 import 'package:flutter_shop_app/presentation/screens/admin/productsadminscreen.dart';
+import 'package:flutter_shop_app/presentation/screens/admin/sendnotificationscreen.dart';
 import 'package:flutter_shop_app/presentation/screens/admin/usersadminscreen.dart';
+import 'package:flutter_shop_app/presentation/screens/auth/forgotpasswordscreen.dart';
+import 'package:flutter_shop_app/presentation/screens/auth/resetpasswordconfirm_screen.dart';
 import 'package:flutter_shop_app/presentation/screens/catalog/catalogo_screen.dart';
 import 'package:flutter_shop_app/presentation/screens/catalog/productdetailscreen.dart';
 import 'package:flutter_shop_app/presentation/screens/orders/orderdetailscreen.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../domain/model/auth_state.dart';
 import '../providers/auth_provider.dart';
 import '../screens/auth/login_screen.dart';
@@ -34,11 +36,15 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       if (auth.isChecking) return null;
 
-      final isAuthRoute = location == '/login' || location == '/register';
+      final isAuthRoute = location == '/login'
+          || location == '/register'
+          || location == '/forgot-password'
+          || location == '/reset-password-confirm';
 
       if (!auth.isAuthenticated && !isAuthRoute) return '/login';
       if ( auth.isAuthenticated &&  isAuthRoute) return auth.isStaff ? '/admin' : '/';
       if ( auth.isAuthenticated && !auth.isStaff && location.startsWith('/admin')) return '/';
+      if ( auth.isAuthenticated && !auth.isStaff && location == '/send-notification') return '/';
 
       return null;
     },
@@ -46,6 +52,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       // ── Auth ──────────────────────────────────────────────
       GoRoute(path: '/login',    builder: (_, __) => const LoginScreen()),
       GoRoute(path: '/register', builder: (_, __) => const RegisterScreen()),
+      GoRoute(path: '/forgot-password',        builder: (_, __) => const ForgotPasswordScreen()),
+      GoRoute(path: '/reset-password-confirm', builder: (_, __) => const ResetPasswordConfirmScreen()),
+
+      // ── Staff ─────────────────────────────────────────────
+      GoRoute(path: '/send-notification', builder: (_, __) => const SendNotificationScreen()),
 
       // ── Zona pública con BottomNavBar ──────────────────────
       ShellRoute(
@@ -80,37 +91,41 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path:    '/admin',
         builder: (_, s) => AdminShell(
-          title: 'Dashboard', currentRoute: s.matchedLocation,
-          child: const DashboardScreen(),
+          title:        'Dashboard',
+          currentRoute: s.matchedLocation,
+          child:        const DashboardScreen(),
         ),
       ),
       GoRoute(
         path:    '/admin/categories',
         builder: (_, s) => AdminShell(
-          title: 'Categorías', currentRoute: s.matchedLocation,
-          child: const CategoriesAdminScreen(),
+          title:        'Categorías',
+          currentRoute: s.matchedLocation,
+          child:        const CategoriesAdminScreen(),
         ),
       ),
       GoRoute(
         path:    '/admin/products',
         builder: (_, s) => AdminShell(
-          title: 'Productos', currentRoute: s.matchedLocation,
-          child: const ProductsAdminScreen(),
+          title:        'Productos',
+          currentRoute: s.matchedLocation,
+          child:        const ProductsAdminScreen(),
         ),
       ),
       GoRoute(
         path:    '/admin/orders',
         builder: (_, s) => AdminShell(
-          title: 'Pedidos', currentRoute: s.matchedLocation,
-          child: const OrdersAdminScreen(),
+          title:        'Pedidos',
+          currentRoute: s.matchedLocation,
+          child:        const OrdersAdminScreen(),
         ),
       ),
       GoRoute(
         path:    '/admin/orders/:id',
         builder: (_, s) => AdminShell(
-          title: 'Detalle pedido #${s.pathParameters['id']}',
+          title:        'Detalle pedido #${s.pathParameters['id']}',
           currentRoute: '/admin/orders',
-          child: OrderAdminDetailScreen(
+          child:        OrderAdminDetailScreen(
             orderId: int.parse(s.pathParameters['id']!),
           ),
         ),
@@ -118,8 +133,9 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path:    '/admin/users',
         builder: (_, s) => AdminShell(
-          title: 'Usuarios', currentRoute: s.matchedLocation,
-          child: const UsersAdminScreen(),
+          title:        'Usuarios',
+          currentRoute: s.matchedLocation,
+          child:        const UsersAdminScreen(),
         ),
       ),
     ],
