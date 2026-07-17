@@ -4,6 +4,7 @@ import { useColorScheme } from 'react-native';
 
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 
+
 SplashScreen.preventAutoHideAsync();
 
 export default function TabLayout() {
