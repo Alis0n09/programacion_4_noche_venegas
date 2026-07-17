@@ -1,0 +1,83 @@
+import 'package:flutter/material.dart';
+
+// Antes representaba servidores (web-01, db-01...).
+// Ahora representa empleados: iniciales, si están activos,
+// y cuántos documentos/aprobaciones tienen pendientes.
+class AvatarBadge extends StatelessWidget {
+  final String nombre;
+  final int    pendientes;   // ej. documentos o aprobaciones de RRHH pendientes
+  final bool   activo;
+  final String detalle;
+
+  const AvatarBadge({
+    super.key,
+    required this.nombre,
+    required this.pendientes,
+    required this.activo,
+    this.detalle = '',
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Stack(
+          clipBehavior: Clip.none,
+          children: [
+            Container(
+              width:  56,
+              height: 56,
+              decoration: BoxDecoration(
+                color:        activo ? Colors.indigo.shade100 : Colors.grey.shade200,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Center(
+                child: Text(
+                  nombre.substring(0, 2).toUpperCase(),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize:   18,
+                    color:      activo ? Colors.indigo : Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 0, right: 0,
+              child: Container(
+                width:  14,
+                height: 14,
+                decoration: BoxDecoration(
+                  color:  activo ? Colors.green : Colors.red,
+                  shape:  BoxShape.circle,
+                  border: Border.all(color: Colors.white, width: 2),
+                ),
+              ),
+            ),
+            if (pendientes > 0)
+              Positioned(
+                top: -4, right: -4,
+                child: Container(
+                  padding:     const EdgeInsets.all(4),
+                  decoration:  const BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
+                  constraints: const BoxConstraints(minWidth: 18, minHeight: 18),
+                  child: Text(
+                    pendientes > 9 ? '9+' : '$pendientes',
+                    style: const TextStyle(
+                        color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Text(
+          detalle,
+          style: const TextStyle(fontSize: 11),
+        ),
+      ],
+    );
+  }
+}
