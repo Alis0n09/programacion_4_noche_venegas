@@ -1,7 +1,6 @@
-// app/index.tsx
 import { Alert, Image, Pressable, StyleSheet, Text, View } from 'react-native'
 
-export default function Paso2() {
+export function Paso2() {
   return (
     <View style={styles.contenedor}>
       <Image

@@ -1,7 +1,6 @@
-// app/index.tsx — reemplaza la función Paso1
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function Paso1() {
+export function Paso1() {
   return (
     <View style={styles.contenedor}>
       <Text style={styles.titulo}>Sistema de Monitoreo</Text>
@@ -22,11 +21,11 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#1950c7',
+    color: '#1a1a1a',
   },
   subtitulo: {
     fontSize: 16,
-    color: '#550e97',
+    color: '#333',
   },
   detalle: {
     fontSize: 13,
