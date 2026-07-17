@@ -83,6 +83,12 @@ function Paso2() {
         <FilaInfo etiqueta="SSH" valor="2 sesiones" />
         <FilaInfo etiqueta="Último acceso" valor="hace 3 minutos" />
       </Card>
+
+      <Card titulo="Disco">
+        <FilaInfo etiqueta="HTTP" valor="142 req/s" />
+        <FilaInfo etiqueta="SSH" valor="2 sesiones" />
+        <FilaInfo etiqueta="Último acceso" valor="hace 3 minutos" />
+      </Card>
     </View>
   )
 }

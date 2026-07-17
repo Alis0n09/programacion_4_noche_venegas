@@ -8,6 +8,7 @@ interface CardProps {
   titulo: string
   subtitulo?: string
   children: ReactNode
+  color: string
 }
 
 export function Card({ titulo, subtitulo, children }: CardProps) {
@@ -25,18 +26,7 @@ export function Card({ titulo, subtitulo, children }: CardProps) {
 }
 
 const estilos2 = StyleSheet.create({
-  fondo: {
-    flex: 1,
-    backgroundColor: '#f0f4f8',
-    padding: 20,
-    paddingTop: 60,
-    gap: 16,
-  },
-  titulo: {
-    fontSize: 20,
-    fontWeight: '700',
-    color: '#1a237e',
-  },
+
   card: {
     backgroundColor: '#ffffff',
     borderRadius: 12,
