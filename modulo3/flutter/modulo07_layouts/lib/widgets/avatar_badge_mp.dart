@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Antes representaba servidores (web-01, db-01...).
-// Ahora representa empleados: iniciales, si están activos,
-// y cuántos documentos/aprobaciones tienen pendientes.
 class AvatarBadge extends StatelessWidget {
   final String nombre;
   final int    pendientes;   // ej. documentos o aprobaciones de RRHH pendientes

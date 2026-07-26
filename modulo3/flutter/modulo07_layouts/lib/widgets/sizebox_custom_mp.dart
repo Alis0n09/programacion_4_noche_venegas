@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Nota: este archivo, igual que en tu proyecto original, contiene una
-// copia de TarjetaLog y no está importado en main.dart. Parece un
-// archivo que quedó de un copy-paste (probablemente iba a ser el
-// ejemplo de SizedBox/Padding/Align/Wrap del Paso 5, que en tu
-// main.dart vive directamente dentro del switch). Lo dejo igual que
-// en el original para que puedas revisarlo o reemplazarlo tú misma.
 class TarjetaLog extends StatelessWidget {
   final String   nivel;        // DEBUG, INFO, WARN, ERROR
   final String   componente;
