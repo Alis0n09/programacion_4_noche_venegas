@@ -1,10 +1,4 @@
-// lib/main_formulario_mp.dart
-// Nota: en tu proyecto original este archivo (lib/main_formulario.dart)
-// es una copia exacta de widgets/formulario_servidor.dart, con el
-// mismo comentario de cabecera "lib/widgets/formulario_servidor.dart"
-// y sin una función main() propia. Parece un archivo que quedó de un
-// copy-paste. Lo replico igual (con el formulario de empleado) para
-// que puedas revisarlo o borrarlo si no lo necesitas.
+
 import 'package:flutter/material.dart';
 
 class FormularioEmpleado extends StatefulWidget {

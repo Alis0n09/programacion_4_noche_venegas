@@ -14,7 +14,7 @@ class _PantallaEmpleadosState extends State<PantallaEmpleados> {
   final _empleados = [
     EmpleadoNomina(id:'1', nombre:'Gabriela Calderón', codigoNomina:'012.003.001.001', numeroEmpleado:22,   cargo:'Vendedora',   departamento:'Ventas',            afiliadoIess:true,  prioritario:true),
     EmpleadoNomina(id:'2', nombre:'Jorge Vera',        codigoNomina:'012.003.002.002', numeroEmpleado:22,   cargo:'Bodeguero',   departamento:'Bodega',            afiliadoIess:true),
-    EmpleadoNomina(id:'3', nombre:'Mateo Alba',        codigoNomina:'012.004.001.003', numeroEmpleado:2222, cargo:'Contador',    departamento:'Contabilidad',      afiliadoIess:false),
+    EmpleadoNomina(id:'3', nombre:'Ines Baño',        codigoNomina:'012.004.001.003', numeroEmpleado:2222, cargo:'Contador',    departamento:'Contabilidad',      afiliadoIess:false),
     EmpleadoNomina(id:'4', nombre:'Ana Chiluisa',      codigoNomina:'192.168.001.005', numeroEmpleado:22,   cargo:'Practicante', departamento:'Recursos Humanos',  afiliadoIess:false),
   ];
 

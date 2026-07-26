@@ -14,7 +14,7 @@ import 'package:modulo09_formularios/widgets/formulario_empleado_mp.dart';
 // │  4  Paso 4  GridView.builder + toggle lista/grid                │
 // │  5  Paso 5  SearchBar + filtrado en tiempo real                 │
 // └──────────────────────────────────────────────────────────────────┘
-const int paso = 4;
+const int paso = 5;
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,

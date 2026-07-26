@@ -15,7 +15,7 @@ import 'package:modulo08_material3/screens/pantalla_dialogs_mp.dart';
 // │  5  Paso 5  NavigationBar con 4 pestañas                        │
 // │  6  Paso 6  SnackBar y AlertDialog                              │
 // └──────────────────────────────────────────────────────────────────┘
-const int paso = 6;
+const int paso = 5;
 
 void main() => runApp(const AppNomina());
 
